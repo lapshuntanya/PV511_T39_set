@@ -51,8 +51,12 @@ public:
     Node<U>* search(U value) {
         //Повернути адресу вузла зі значенням value
         //Якщо value немає в дереві, то повернути nullptr
+        Node<U>*p = root;
+        while (p!=nullptr && p->info != value) {
+            p = (value < p->info) ? p->left : p->right;
+        }
 
-        return nullptr;
+        return p;
     }
 
     //Повний обхід дерева

@@ -17,5 +17,15 @@ int main() {
 
 
     cout << endl;
+
+    Node<int>*p = tree.search(8);
+    if (p) p->showNode();
+    else cout << "not found!\n";
+
+
+    p = tree.search(-8);
+    if (p) p->showNode();
+    else cout << "not found!\n";
+
     return 0;
 }
