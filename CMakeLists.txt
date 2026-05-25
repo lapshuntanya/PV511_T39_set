@@ -3,4 +3,5 @@ project(PV511_T39_set)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(PV511_T39_set main.cpp)
+add_executable(PV511_T39_set main.cpp
+        BinTree.h)
