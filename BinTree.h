@@ -51,6 +51,8 @@ public:
     Node<U>* search(U value) {
         //Повернути адресу вузла зі значенням value
         //Якщо value немає в дереві, то повернути nullptr
+
+        return nullptr;
     }
 
     //Повний обхід дерева
